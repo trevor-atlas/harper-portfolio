@@ -1,0 +1,27 @@
+.primary-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  background-color: $primary-blue;
+  padding: 1rem;
+  color: $primary-offwhite;
+
+  ul {
+    text-align: right;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="flex container mx-auto justify-between">
+		<div>
+			<a class="text-playfair" href="{{ .Site.BaseURL }}">
+				&copy;{{ now.Year }}
+				{{ .Site.Title }}
+			</a>
+		</div>
+		<div>
+			{{ range $index, $value := $.Site.Data.footer_links }}
+			{{ if (ne $index 0) }}|{{ end }}
+			<a target="_blank" rel="noopener" class="text-playfair pl-1 pr-1" href="{{ .url }}">{{ .name }}</a>
+			{{ end }}
+		</div>
+	</div>
+</footer>

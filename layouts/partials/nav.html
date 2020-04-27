@@ -1,0 +1,16 @@
+<nav class="primary-nav">
+    <div class="container mx-auto">
+        <ul>
+            <li class="float-left">
+                {{ if ne (relURL .URL) ("/" | safeHTML) }}
+                    <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+                {{ end }}
+            </li>
+            {{ with .Site.Menus.main }}
+            {{ range . }}
+            <li class="text-right"><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+</nav>

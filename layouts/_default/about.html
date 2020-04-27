@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
+    {{ partial "head" . }}
+<body>
+    {{ partial "nav" . }}
+    <style>
+        main {
+            margin-top: 5rem;
+        }
+        .about-intro {
+            padding-top: 8rem;
+            padding-bottom: 6rem;
+        }
+
+        .description {
+            padding-left: 2em;
+        }
+
+        .image {
+            float: right;
+            max-width: 250px;
+            border-radius: 50%;
+        }
+        
+        .about-burst {
+            position: relative;
+        }
+
+        .about-burst::after {
+            background: url("/images/about-burst.png") no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            top: -30px;
+            right: -3rem;
+            display: block;
+            content: "";
+            height: 120px;
+            width: 100%;
+        }
+
+        .small-sparkle {
+            position: absolute;
+            top: -5rem;
+            right: 4rem;
+
+        }
+
+        .squiggle {
+            position: relative;
+        }
+
+        .squiggle::after {
+            background: url("/images/small-underline.png") no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            display: block;
+            content: "";
+            height: 20px;
+            width: 100%;
+        }
+
+        .about-description {
+            font-size: 1.335rem;
+            padding: 0;
+            margin: 0 0 .667rem;
+            line-height: 1.2;
+        }
+
+        main .container {
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+        }
+
+    </style>
+
+    <main>
+        <div class="about-intro flex flex-no-wrap items-center content-start container mx-auto">
+            <div class="w-2/8">
+                <img class="image" src="/images/harper.jpeg" alt="Harper Atlas">
+            </div>
+            <div class="description w-6/8">
+                <img class="small-sparkle" src="" alt="">
+                <h1 class="about-header">Hi! I'm Harper <span class="about-burst">Atlas.</span></h1>
+                <div class="about-description text-lato">My goal is to improve the lives of <del>users</del> <span class="squiggle">people</span>, one experience at a time.</div>
+            </div>
+        </div>
+        <div class="container mx-auto">
+            {{ .Content }}
+        </div>
+    </main>
+    {{ partial "footer" . }}
+</body>
+</html>

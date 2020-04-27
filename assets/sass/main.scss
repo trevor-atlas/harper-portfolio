@@ -1,0 +1,37 @@
+$primary-blue: #4582FC;
+$primary-offwhite: #FDFEFF;
+$primary-text: #1F2626;
+
+@import 'tailwind';
+@import 'typography';
+@import 'card';
+@import 'intro';
+@import 'nav';
+@import 'footer';
+
+
+.primary-background {
+  background-color: $primary-blue;
+  background-image: url("/images/feather-mandala-transparent-.png");
+  background-position-x: left;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: 650px auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 750px;
+  z-index: 0;
+}
+
+.container {
+  z-index: 1;
+
+  @media(min-width:1280px) {
+      max-width:1024px;
+  }
+}
+
+
+
