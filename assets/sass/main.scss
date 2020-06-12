@@ -25,15 +25,15 @@ body {
 .primary-background {
   background-color: $primary-blue;
   background-image: url("/images/feather-mandala-transparent-.png");
-  background-position-x: left;
+  background-position-x: 25%;
   background-position-y: center;
   background-repeat: no-repeat;
-  background-size: 650px auto;
+  background-size: 450px auto;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  min-height: 750px;
+  min-height: 550px;
   z-index: 0;
 }
 

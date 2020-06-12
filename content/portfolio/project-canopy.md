@@ -16,12 +16,12 @@ draft: false
 
 <div class="overview">
     <div class="container mx-auto">
-     <div class="grid grid-cols-5 gap-4">
-        <div class="col-span-2">
+     <div class="grid grid-cols-5 gap-4 text-center md:text-left">
+        <div class="col-span-5 md:col-span-2">
             <h6>Overview</h6>
             <p>Project Canopy's mission is to centralize biodiversity data for the Congo Basin rainforest by providing the analytical tools with which to interpret that data. My goal was to make this knowledge accessible and digestible to donors, governments, and the public at large.</p>
         </div>
-        <div >
+        <div class="md:col-span-1 col-span-5">
             <h6>Role</h6>
             <ul class="override">
                 <li>UX/UI</li>
@@ -29,7 +29,7 @@ draft: false
                 <li>Prototyper</li>
             </ul>
         </div>
-        <div>
+        <div class="md:col-span-1 col-span-5">
             <h6>Team</h6>
             <ul class="override">
                 <li>1 UX Designer</li>
@@ -37,7 +37,7 @@ draft: false
                 <li>5 Developers</li>
             </ul>
         </div>
-        <div>
+        <div class="md:col-span-1 col-span-5">
             <h6>Timeline</h6>
             <p>8 weeks</p>
         </div>
@@ -77,15 +77,13 @@ draft: false
 
 <div class="overview">
     <div class="container mx-auto">
-        <div>
-            <h3>Know your users</h3>
-            <p>Project Canopy’s userbase is vast: from high-level policy/decision-makers, to campaigners, to local NGO’s. To narrow down the focus of this project, I focused on two types of users:</p>
-        </div>
-         <div class="grid grid-cols-5 gap-4 py-6">
+        <h3>Know your users</h3>
+        <p>Project Canopy’s userbase is vast: from high-level policy/decision-makers, to campaigners, to local NGO’s. To narrow down the focus of this project, I focused on two types of users:</p>
+         <div class="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
             <div class="grid col-span-2 justify-center content-center">
                 <img class="portrait" src="/project-canopy/Muriel.jpg" alt="Muriel">
             </div>
-            <div class="col-span-3">
+            <div class="col-span-1 md:col-span-3">
                <p class="pb-2"><strong>Muriel</strong> is a program officer at a large international development organization that has decided to allocate $5m to conservation programs for the Congo Basin rainforest.</p>
                 <ul>
                     <li>She wants to ensure that the programs funded will have the greatest impact.</li>
@@ -94,8 +92,11 @@ draft: false
                 </ul>
             </div>
         </div>
-         <div class="grid grid-cols-5 gap-4 py-6">
-            <div class="col-span-3">
+         <div class="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
+            <div class="md:hidden grid col-span-1 md:col-span-2 justify-center content-center">
+                <img class="portrait" src="/project-canopy/Jules.jpg" alt="Muriel">
+            </div>
+            <div class="col-span-1 md:col-span-3">
                 <p class="pb-2"><strong>Jules</strong> works for a conservation NGO in the Central African Republic.</p>
                 <ul>
                     <li>He has been tasked with <strong>ensuring that local law enforcement agencies and anti-poaching groups are working with the most up-to-date information</strong> on which species are threatened and whether their trade is internationally regulated.</li>
@@ -103,7 +104,7 @@ draft: false
                     <li>Funding is always tight and this task, while valuable, is extremely labor-intensive. He is the first person to do this in several years.</li>
                 </ul>
             </div>
-            <div class="grid col-span-2 justify-center content-center">
+            <div class="hidden md:block grid col-span-1 md:col-span-2 justify-center content-center">
                 <img class="portrait" src="/project-canopy/Jules.jpg" alt="Muriel">
             </div>
         </div>
@@ -145,9 +146,9 @@ draft: false
 </div>
 
 <div class="container mx-auto v-rhythm">
-    <h3>Design system</h3>
+    <h3 class="mb-6">Design system</h3cla>
     <h5>Color palette</h5>
-     <div class="grid grid-cols-5 gap-4 py-6">
+     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
         <div class="col-span-2">
             <p>Project Canopy’s original colors were very warm, so with the blessing of the clients, I adjusted the tone to cooler variations. <strong>I wanted to keep the same earthy vibe, but elevate it to feel more modern and sophisticated.</strong></p>
         </div>
@@ -155,7 +156,7 @@ draft: false
             <img src="/project-canopy/product-colors.png" alt="Color palette">
         </div>
     </div>
-     <div class="grid grid-cols-5 gap-4 py-6">
+     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
     
         <div class="grid col-span-3 justify-center content-center">
             <img src="/project-canopy/Primary colors.png" alt="Color palette">
@@ -169,7 +170,7 @@ draft: false
 
 <div class="container mx-auto v-rhythm">
     <h5>Typeface</h5>
-     <div class="grid grid-cols-5 gap-4 py-6">
+     <div class="grid grid-cols-1 md:grid-cols-5 gap-4 py-6">
         <div class="col-span-2">
             <p>I experimented with Heebo, Open Sans, and PT Sans before landing on IBM Plex Sans.</p>
             <p>As soon as I saw it, I knew it was the obvious choice for Project Canopy’s typeface. <strong>It’s clean and professional while still approachable.</strong> It conveys the seriousness of the information without being intimidating.</p>
@@ -190,10 +191,7 @@ draft: false
 </div>
 
 <div class="container mx-auto v-rhythm">
-    <h3>Branding</h3>
-     <div class="py-6">
-        <p>BIG VIDEO :D</p>
-    </div>
+    <h3>Final designs</h3>
      <div class="py-6">
         <img src="/project-canopy/final-dashboard.png" alt="final dashboard">
     </div>

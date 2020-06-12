@@ -8,19 +8,12 @@
         margin-top: 5rem;
     }
 
-    .about-intro {
-        padding-top: 8rem;
-        padding-bottom: 6rem;
-    }
-
-    .description {
-        padding-left: 2em;
-    }
-
     .image {
-        float: right;
         max-width: 250px;
         border-radius: 50%;
+        width: 100%;
+        margin: 0 auto;
+        display: block;
     }
 
     .about-burst {
@@ -37,13 +30,6 @@
         content: "";
         height: 120px;
         width: 100%;
-    }
-
-    .small-sparkle {
-        position: absolute;
-        top: -5rem;
-        right: 4rem;
-
     }
 
     .squiggle {
@@ -70,37 +56,50 @@
         line-height: 1.2;
     }
 
-    main .container {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+    .cosmos {
+        opacity: .2;
+        height: 1300px;
+        width: 600px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url('/images/cosmos-bouquet.png');
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: -200px;
+        bottom: auto;
+        transform: rotate(10deg);
+        z-index: 0;
     }
+
+
 
 </style>
 
-<div style="position: relative">
-    <main style="z-index: 2">
-        <div class="about-intro flex flex-no-wrap items-center content-start container mx-auto">
-            <div class="w-2/8">
-                <img class="image" src="/images/harper.jpeg" alt="Harper Atlas">
-            </div>
-            <div class="description w-6/8">
-                <img class="small-sparkle" src="" alt="">
-                <h1 class="about-header">Hi! I'm Harper <span class="about-burst">Atlas.</span></h1>
-                <div class="about-description text-lato">My goal is to improve the lives of
-                    <del>users</del>
-                    <span class="squiggle">people</span>, one experience at a time.
+<div style="position: relative;">
+    <main style="position: relative;z-index: 1">
+        <div class="container mx-auto ">
+            <div class="flex flex-wrap items-center content-center my-16">
+                <div class="w-full sm:w-2/6 sm:pr-6">
+                    <img class="image" src="/images/harper.jpeg" alt="Harper Atlas">
+                </div>
+                <div class="w-full sm:w-4/6">
+                    <h1 class="about-header">Hi! I'm Harper <span class="about-burst">Atlas.</span>
+                    </h1>
+                    <div class="about-description text-lato">My goal is to improve the lives of
+                        <del>users</del>
+                        <span class="squiggle">people</span>, one experience at a time.
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container mx-auto">
-            {{ .Content }}
+            <div class="container mx-auto">
+                {{ .Content }}
+            </div>
         </div>
     </main>
 
-    <div style="opacity: .4; height: 1300px; width: 600px; background-size: fill; background-repeat: no-repeat;background-image: url('/images/cosmos-bouquet.png'); position: absolute; right: -200px; top: 25%; left: auto; z-index: 1; transform: rotate(10deg)" >
-    </div>
-    <div style="height: 670px; width: 600px; background-size: fill; background-repeat: no-repeat;background-image: url('/images/poppy.png'); position: absolute; right: auto; top: 25%; left: 20px; z-index: 1;" >
-    </div>
+    <div class="cosmos"></div>
+    <div class="poppy"></div>
 </div>
 {{ partial "footer" . }}
 

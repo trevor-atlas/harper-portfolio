@@ -1,16 +1,20 @@
+$button-color: $primary-blue;
+
 .button {
-  font-size: 18px;
-  padding: .667rem 2rem;
-  border: 1px solid #74A1Fd;
+  font-size: .8rem;
+  padding: .667rem 1rem;
+  border: 1px solid transparent;
+  background-color: $button-color;
   text-decoration: none;
-  color: #74A1Fd;
-  border-radius: 10px;
+  color: $primary-offwhite;
+  border-radius: 5px;
   display: inline-block;
-  transition: color,  .3s ease, background-color .3s ease;
+  transition: color, .3s ease, background-color .3s ease;
 
   &:hover {
-    background-color: #74A1Fd;
-    color: $primary-offwhite;
+    background-color: $primary-offwhite;
+    color: $button-color;
+    border: 1px solid $button-color;
   }
 }
 
@@ -23,4 +27,9 @@ figcaption {
 
 img.rounded {
   border-radius: 20px;
+}
+
+.container {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }

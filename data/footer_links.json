@@ -1,22 +1,22 @@
 [
   {
-    "name": "Dribbble",
+    "name": "dribbble",
     "url": "https://dribbble.com/harperatlas"
   },
   {
-    "name": "Twitter",
+    "name": "twitter",
     "url": "https://twitter.com/HarperAtlas"
   },
   {
-    "name": "Instagram",
+    "name": "instagram",
     "url": "https://www.instagram.com/harperatlas/"
   },
   {
-    "name": "LinkedIn",
+    "name": "linkedin",
     "url": "http://linkedin.com/in/harper-atlas/"
   },
   {
-    "name": "Email",
+    "name": "email",
     "url": "mailto:harperatlas@gmail.com"
   }
 ]
