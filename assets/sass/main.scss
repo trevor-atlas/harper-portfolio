@@ -1,6 +1,11 @@
 $primary-blue: #4582FC;
+$light-blue: #E2EBFF;
+
+$light-gray: #8191A6;
+
 $primary-offwhite: #FDFEFF;
 $primary-text: #1F2626;
+
 
 @import 'tailwind';
 @import 'animations';
@@ -9,7 +14,13 @@ $primary-text: #1F2626;
 @import 'intro';
 @import 'nav';
 @import 'footer';
+@import 'ui';
+@import 'case-study';
 
+body {
+  padding-top: 3.5rem;
+  background-color: $primary-offwhite;
+}
 
 .primary-background {
   background-color: $primary-blue;

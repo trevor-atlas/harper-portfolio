@@ -62,21 +62,6 @@
     }
   }
 
-  .button {
-    font-size: 18px;
-    padding: .667rem 2rem;
-    border: 1px solid #74A1Fd;
-    text-decoration: none;
-    color: #74A1Fd;
-    border-radius: 10px;
-    display: inline-block;
-    transition: color,  .3s ease, background-color .3s ease;
-
-    &:hover {
-      background-color: #74A1Fd;
-      color: $primary-offwhite;
-    }
-  }
 }
 
 
