@@ -1,19 +1,17 @@
-<footer class="footer">
-	<div class="flex items-start container mx-auto">
-		<h3>Say hello!</h3>
+<footer class="footer text-center sm:text-left">
+	<div class="flex hidden sm:block items-start container mx-auto">
+		<h4>Say hello!</h4>
 		<img class="footer-arrow" src="/images/arrow 2.png" alt="squiggle arrow">
 	</div>
-    <div class="flex container mx-auto justify-between">
-		<div>
-			<a class="text-playfair" href="{{ .Site.BaseURL }}">
-				&copy;{{ now.Year }}
-				{{ .Site.Title }}
-			</a>
+    <div class="flex flex-wrap container mx-auto sm:justify-between">
+		<div class="w-full sm:w-auto">
+			<a class="text-playfair" href="{{ .Site.BaseURL }}">&copy;{{ now.Year }} {{ .Site.Title }}</a>
 		</div>
-		<div>
+		<div class="w-full sm:w-auto sm:content-end items-center">
 			{{ range $index, $value := $.Site.Data.footer_links }}
-			{{ if (ne $index 0) }}|{{ end }}
-			<a target="_blank" rel="noopener" class="text-playfair pl-1 pr-1" href="{{ .url }}">{{ .name }}</a>
+			<a target="_blank" rel="noopener" class="text-center m-0 inline-block pr-4"  href="{{ .url }}">
+				<img class="icon inline-block" src="/svg/{{ .name }}.svg" alt="">
+			</a>
 			{{ end }}
 		</div>
 	</div>

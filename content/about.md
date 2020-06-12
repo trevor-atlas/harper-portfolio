@@ -7,8 +7,6 @@ menu: main
 ---
 
 {{<rawhtml>}}
-{{</rawhtml>}}
-{{<rawhtml>}}
     <h3 class="text-center">Curiosity hasn’t killed this cat</h3>
 {{</rawhtml>}}
 
@@ -27,13 +25,13 @@ I took a circuitous route to get here, but my curiosity led me to the world of U
 
 In my spare time, you will find me hiking with friends, taking pictures of and drawing plants, doing yoga, and trying not to squeal over every dog I pass on the street.  
 
-Three random facts about me:
+**Three random facts about me:**
 - I hate heights but love climbing
 - I am a former contortionist/circus artist
 - Elephants are my favorite animal
 
 {{<rawhtml>}}
-     <div class="grid grid-cols-3 gap-4 py-10">
+     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-10">
      <figure>
         <img class="rounded" src="/images/indy.jpeg" alt="Harper with a cute dog" />
         <figcaption>When you run into your BFF on the street<figcaption>
