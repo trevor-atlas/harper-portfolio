@@ -1,0 +1,8 @@
+<main id="main">
+    <div>
+        <h4 id="title">{{ .Title }}</h4>
+        {{ range .Portfolio }}
+        {{ .Render "summary"}}
+        {{ end }}
+    </div>
+</main>

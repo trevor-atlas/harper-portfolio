@@ -1,82 +1,84 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en-us" }}">
-    {{ partial "head" . }}
+<html lang="{{ .Site.LanguageCode | default " en-us" }}">
+{{ partial "head" . }}
 <body>
-    {{ partial "nav" . }}
-    <style>
-        main {
-            margin-top: 5rem;
-        }
-        .about-intro {
-            padding-top: 8rem;
-            padding-bottom: 6rem;
-        }
+{{ partial "nav" . }}
+<style>
+    main {
+        margin-top: 5rem;
+    }
 
-        .description {
-            padding-left: 2em;
-        }
+    .about-intro {
+        padding-top: 8rem;
+        padding-bottom: 6rem;
+    }
 
-        .image {
-            float: right;
-            max-width: 250px;
-            border-radius: 50%;
-        }
-        
-        .about-burst {
-            position: relative;
-        }
+    .description {
+        padding-left: 2em;
+    }
 
-        .about-burst::after {
-            background: url("/images/about-burst.png") no-repeat center center;
-            background-size: contain;
-            position: absolute;
-            top: -30px;
-            right: -3rem;
-            display: block;
-            content: "";
-            height: 120px;
-            width: 100%;
-        }
+    .image {
+        float: right;
+        max-width: 250px;
+        border-radius: 50%;
+    }
 
-        .small-sparkle {
-            position: absolute;
-            top: -5rem;
-            right: 4rem;
+    .about-burst {
+        position: relative;
+    }
 
-        }
+    .about-burst::after {
+        background: url("/images/about-burst.png") no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        top: -30px;
+        right: -3rem;
+        display: block;
+        content: "";
+        height: 120px;
+        width: 100%;
+    }
 
-        .squiggle {
-            position: relative;
-        }
+    .small-sparkle {
+        position: absolute;
+        top: -5rem;
+        right: 4rem;
 
-        .squiggle::after {
-            background: url("/images/small-underline.png") no-repeat center center;
-            background-size: contain;
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            right: 0;
-            display: block;
-            content: "";
-            height: 20px;
-            width: 100%;
-        }
+    }
 
-        .about-description {
-            font-size: 1.335rem;
-            padding: 0;
-            margin: 0 0 .667rem;
-            line-height: 1.2;
-        }
+    .squiggle {
+        position: relative;
+    }
 
-        main .container {
-            padding-left: 2.5rem;
-            padding-right: 2.5rem;
-        }
+    .squiggle::after {
+        background: url("/images/small-underline.png") no-repeat center center;
+        background-size: contain;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        display: block;
+        content: "";
+        height: 20px;
+        width: 100%;
+    }
 
-    </style>
+    .about-description {
+        font-size: 1.335rem;
+        padding: 0;
+        margin: 0 0 .667rem;
+        line-height: 1.2;
+    }
 
-    <main>
+    main .container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+
+</style>
+
+<div style="position: relative">
+    <main style="z-index: 2">
         <div class="about-intro flex flex-no-wrap items-center content-start container mx-auto">
             <div class="w-2/8">
                 <img class="image" src="/images/harper.jpeg" alt="Harper Atlas">
@@ -84,13 +86,23 @@
             <div class="description w-6/8">
                 <img class="small-sparkle" src="" alt="">
                 <h1 class="about-header">Hi! I'm Harper <span class="about-burst">Atlas.</span></h1>
-                <div class="about-description text-lato">My goal is to improve the lives of <del>users</del> <span class="squiggle">people</span>, one experience at a time.</div>
+                <div class="about-description text-lato">My goal is to improve the lives of
+                    <del>users</del>
+                    <span class="squiggle">people</span>, one experience at a time.
+                </div>
             </div>
         </div>
         <div class="container mx-auto">
             {{ .Content }}
         </div>
     </main>
-    {{ partial "footer" . }}
+
+    <div style="opacity: .4; height: 1300px; width: 600px; background-size: fill; background-repeat: no-repeat;background-image: url('/images/cosmos-bouquet.png'); position: absolute; right: -200px; top: 25%; left: auto; z-index: 1; transform: rotate(10deg)" >
+    </div>
+    <div style="height: 670px; width: 600px; background-size: fill; background-repeat: no-repeat;background-image: url('/images/poppy.png'); position: absolute; right: auto; top: 25%; left: 20px; z-index: 1;" >
+    </div>
+</div>
+{{ partial "footer" . }}
+
 </body>
 </html>

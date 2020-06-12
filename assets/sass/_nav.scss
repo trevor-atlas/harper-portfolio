@@ -10,15 +10,20 @@
 
   ul {
     text-align: right;
+    line-height: 1.5;
 
     li {
       display: inline-block;
+      line-height: 1.5;
+      margin: 0;
     }
   }
 
   a {
+    line-height: 1.5;
     font-family: 'Playfair Display', serif;
     text-decoration: none;
+    margin: 0;
 
     &:visited {
       color: inherit;

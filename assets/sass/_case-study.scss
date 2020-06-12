@@ -1,0 +1,51 @@
+.case-study {
+
+  .arrow-down {
+    margin: 0 auto;
+    height: 30px;
+    width: 30px;
+    border-bottom: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
+    transform: rotate(45deg);
+  }
+
+  .hero {
+    text-align: center;
+    padding: 4em;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 2em;
+      max-width: 1324px;
+    }
+
+  }
+
+  .overview {
+    background-color: $light-blue;
+    padding: 4em 0;
+    margin-bottom: 6em;
+
+    ul.override {
+      list-style: none;
+      li {
+        margin-bottom: initial;
+      }
+    }
+
+    ul {
+      li {
+      }
+    }
+
+  }
+
+  .v-rhythm {
+    margin-bottom: 6em;
+  }
+  .portrait {
+    max-width: 250px;
+    border-radius: 50%;
+  }
+}

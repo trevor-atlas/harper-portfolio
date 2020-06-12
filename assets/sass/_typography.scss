@@ -2,11 +2,15 @@ body, html {
   color: $primary-text;
   font-family: 'Lato', sans-serif;
   background-color: $primary-offwhite;
-  font-size: 24px;
+  font-size: 18px;
 
   @media(max-width: 480px) {
     font-size: 16px;
   }
+}
+
+.caption {
+   font-size: 12px;
 }
 
 p, a {
@@ -19,8 +23,12 @@ ul {
   list-style: initial;
   margin: 0;
   padding: 0;
-  list-style-position: inside;
 }
+
+li {
+  margin-bottom: 1rem;
+}
+
 
 p + ol, p + ul {
   margin-top: -1.25rem;
@@ -45,19 +53,31 @@ h1, h2, h3, h4, h5 {
   line-height: 1.2;
 }
 
+
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.3rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.67rem;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 h4 {
+  font-size: 1.35rem;
+}
+
+h5 {
   font-family: 'Lato', sans-serif;
-  font-size: .75rem;
+  font-size: 1.35rem;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: .5em;
 }
