@@ -27,7 +27,7 @@ In my spare time, you will find me hiking with friends, taking pictures of and d
 
 **Three random facts about me:**
 - I hate heights but love climbing
-- I am a former contortionist/circus artist
+- I am a former circus artist
 - Elephants are my favorite animal
 
 {{<rawhtml>}}
