@@ -8,4 +8,4 @@ title = "Harper Atlas"
 
 [markup.goldmark.renderer]
 unsafe = true
-timeout = "30000"
+timeout = "100000"
