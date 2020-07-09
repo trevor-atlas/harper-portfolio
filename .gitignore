@@ -3,5 +3,6 @@
 out
 gen
 resources
+!resources/_gen/images
 .DS_Store
 public
