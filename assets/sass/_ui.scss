@@ -8,7 +8,6 @@ $button-color: $primary-blue;
   text-decoration: none;
   color: $primary-offwhite;
   border-radius: 5px;
-  display: inline-block;
   transition: color, .3s ease, background-color .3s ease;
 
   &:hover {
@@ -18,7 +17,12 @@ $button-color: $primary-blue;
   }
 }
 
-figcaption {
+.portfolio-image {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+figcaption, .caption {
   font-size: 12px;
   color: $light-gray;
   font-family: 'Lato', sans-serif;
@@ -32,4 +36,26 @@ img.rounded {
 .container {
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.colorswatch {
+	border-radius: 6px;
+	padding-top: 8rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+	.content {
+		padding: 12px;
+		border-radius: 0 0 6px 6px;
+		background-color: white;
+		text-align: center;
+	}
+
+	.label {
+		color: black;
+	}
+
+	.color {
+		color: #666;
+		text-transform: uppercase;
+	}
 }
