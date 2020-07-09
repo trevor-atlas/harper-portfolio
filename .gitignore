@@ -1,7 +1,8 @@
 .idea
 *.iml
 out
-gen
 resources
+!resources/_gen
 .DS_Store
 public
+
