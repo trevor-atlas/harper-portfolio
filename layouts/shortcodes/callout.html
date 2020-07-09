@@ -1,0 +1,12 @@
+<div class="callout mb-20">
+	<div class="pt-16 {{if (.Get "caption") }}pb-10{{else}}pb-16{{end}}">
+		<div class="container mx-auto">
+			{{ if .Get "raw"}}
+			{{ .Inner }}
+			{{ else }}
+			{{ .Inner | markdownify }}
+			{{ end }}
+		</div>
+	</div>
+	{{ with .Get "caption" }}<div class="p-4 mt-6 text-center caption">*{{.}}</div>{{end}}
+</div>

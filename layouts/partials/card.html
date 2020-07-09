@@ -1,14 +1,14 @@
-<div class="card">
-    <div class="flex flex-wrap content-end items-center">
-        <div class="info w-full md:w-1/3">
-            <h2>{{ .title }}</h2>
-            <div class="info-text">{{ .description }}</div>
-            <a href="{{ .link_url }}" class="button">Learn more</a>
+<div class="card fade-in-up" style="animation-delay: .{{.Scratch.Get "index"}}s">
+    <div class="flex flex-wrap">
+        <div class="info w-full md:w-2/4">
+            <h2>{{ .Title }}</h2>
+            <div class="info-text mb-6">{{ .Description }}</div>
+            <a href="{{ .Permalink }}" class="button inline-block">Learn more</a>
         </div>
-        <div class="w-full md:w-2/3 items-center content-center">
-            <div class="image">
-                <img src="{{ .image_url }}" />
-            </div>
+        <div class="w-full md:w-1/2 flex items-end content-center">
+			<div class="image">
+				<img src="{{ .Params.Image }}" />
+			</div>
         </div>
     </div>
 </div>

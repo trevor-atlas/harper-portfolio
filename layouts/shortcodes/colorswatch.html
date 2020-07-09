@@ -1,0 +1,10 @@
+{{ $label := .Get "label" }}
+{{ $color := .Get "color" }}
+{{ $colorLabel := .Get "colorlabel" }}
+
+<div class="colorswatch" style="background-color: {{ $color | safeCSS }}">
+	<div class="content">
+		<div class="label">{{ $label }}</div>
+		<div class="color">{{ $colorLabel }}</div>
+	</div>
+</div>

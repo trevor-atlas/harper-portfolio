@@ -1,8 +1,316 @@
 ---
 title: "Home is all around you"
-date: 2020-04-26T22:51:46-04:00
+date: 2020-07-09T17:01:46-04:00
 description: Redesigning RV Way
 thumbnail: "/images/rv-way-thumb.png"
-draft: true
+image: "/images/rv-way-card.png"
+weight: 25
+draft: false
 ---
 
+{{<rawhtml>}}
+<div class="hero">
+    <h1>Home is all around you</h1> 
+    <h5>Redesigning RV Way</h5>
+    {{< img src="/images/rv-way/laptop-home.png" alt="RV Way landing page" >}}
+    <div class="arrow-down"></div>
+</div>
+{{</rawhtml>}}
+
+{{<callout raw="true">}}
+     <div class="grid grid-cols-5 gap-4 text-center md:text-left">
+        <div class="col-span-5 md:col-span-2">
+            <h6>Overview</h6>
+            <p>RV Way is a route planning web app designed specifically for people who travel in RV’s. Allowing users to input their vehicle’s specifications, <strong>RV Way generates a route that guides them safely to their destination.</strong> My team made the app more intuitive by designing a clean and simple look that appealed to our older demographic. We used conversational language and avoided jargon since our users might not be tech-savvy.</p>
+        </div>
+        <div class="md:col-span-1 col-span-5">
+            <h6>Role</h6>
+            <ul class="override">
+                <li>UX/UI</li>
+                <li>Researcher</li>
+                <li>Interviewer</li>
+                <li>Prototyper</li>
+            </ul>
+        </div>
+        <div class="md:col-span-1 col-span-5">
+            <h6>Team</h6>
+            <ul class="override">
+                <li>2 UX Designer</li>
+                <li>3 Data Scientists</li>
+                <li>5 Developers</li>
+            </ul>
+        </div>
+        <div class="md:col-span-1 col-span-5">
+            <h6>Timeline</h6>
+            <p>8 weeks</p>
+        </div>
+    </div>
+{{</callout>}}
+
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <div class="grid grid-cols-3 gap-4 text-center md:text-left">
+        <div class="col-span-3 md:col-span-1">
+            {{< img src="/images/rv-way/landing-page.jpg" alt="landing page" >}}
+        </div>
+        <div class="col-span-3 md:col-span-2">
+            <div class="grid grid-cols-2 gap-4 mb-10 text-center md:text-left">
+                <div class="col-span-2 md:col-span-1">
+                    {{< img src="/images/rv-way/sign-up.jpg" alt="sign up page" >}}
+                </div>
+                <div class="col-span-2 md:col-span-1">
+                    {{< img src="/images/rv-way/map-page.jpg" alt="map page" >}}
+                </div>
+            </div>
+            <div class="col-span-3 md:col-span-2">
+                <div class="grid grid-cols-2 gap-4 text-center md:text-left">
+                    <div class="col-span-2 md:col-span-1">
+                        {{< img src="/images/rv-way/add-vehicle.jpg" alt="add a vehicle" >}}
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        {{< img src="/images/rv-way/sign-in.jpg" alt="sign in page" >}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{</rawhtml>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <div>
+        <img class="pulsing inline-block" style="margin: 0 .5rem 1rem;" src="/images/rv-way/location-icon.png" /><h3 class="inline-block">Starting Location</h3>
+    </div>
+    <p><strong>Recreational vehicles (RVs for short), represent adventure, the open road, and independence.</strong> The use of social media, the Tiny House Movement, and #VanLife have brought mobile-living into the public eye. And as the cost of living climbs higher and higher, <strong>the ability to take your home with you is becoming increasingly more attractive.</strong></p>
+<p>At the beginning of the project, I knew next to nothing about the RV world. My knowledge was limited to passing them on the highway and what I’d seen in movies (raise your hand if you remember RV with Robin Williams). <strong>I never would have guessed the depth of which the RV community cares for each other, or how thoughtful they are of the world around them.</strong></p>
+<p>During my interviews with RVers (both full-time and part-time) <strong>the most consistent descriptor I heard was “tribe.” RVers rely on each other for important information</strong> (one woman we interviewed will actually get in her car and drive around a new area with a tape measure to make sure bridges are actually the height the sign claims).<strong>They are a family, a community, a tribe. They care for one another, whether they’ve met in person or not.</strong></p>
+</div>
+{{</rawhtml>}}
+{{<callout raw="true" caption="Based on reports from 2015-2018 - RV Industry Association">}}
+     <div class="grid grid-cols-3 gap-4 text-center md:text-left">
+        <div class="col-span-3 md:col-span-1">
+            <h6>RV travelers in the U.S.</h6>
+            <ul class="override">
+                <li>25 million people a year</li>
+                <li>10 million full time RVers</li>
+            </ul>
+        </div>
+        <div class="md:col-span-1 col-span-3">
+            <h6>The typical RVer</h6>
+            <ul class="override">
+                <li>Married and 48 years old</li>
+                <li>Annual income of $68,000</li>
+            </ul>
+        </div>
+        <div class="md:col-span-1 col-span-3">
+            <h6>Trends in RV ownership*</h6>
+            <ul class="override">
+                <li>2.32% increase in ages 35-44</li>
+                <li>3.07% increase in ages 25-34</li>
+            </ul>
+        </div>
+    </div>
+{{</callout>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+<div>
+    <img class="pulsing inline-block" style="margin: 0 .5rem 1rem;" src="/images/rv-way/directions-icon.png" /><h3 class="inline-block">Getting Directions</h3>
+</div>
+<p>My team was tasked with improving the usability of the product, then named RV Nav. We began this process by reviewing the previous team’s documentation, getting to know the users, and conducting usability testing to see what worked, and what didn’t.</p>
+<p>
+    <strong>It became clear early on that we would have to totally redesign the user interface (UI), as testing showed it was not clear what the app was for, or how to navigate it.</strong>
+</p>
+<p>Overhauling a product’s entire UI in 8 weeks or less is no small feat. Knowing that improvement is a never-ending process and to keep ourselves on track, we focused on the following goals:</p>
+<ul>
+    <li>Provide the most efficient and safe route for users who drive their RV's around</li>
+    <li>Give users the most accurate intel based on their details and preferences</li>
+    <li>Continuously improve the routing function through additional data sources and crowd-sourced data</li>
+    <li>Provide users with a simple and beautiful app design to yield a better RV traveling experiences</li>
+</ul>
+<p>My partner and I wanted to engage our entire team in our process early on. <strong>This not only helped build camaraderie, but it also helped our developers and data scientists understand what we, as UX designers, were contributing to the team.</strong><br>They were so excited when we asked them to join us for a brainstorming workshop!
+</p>
+<p>During this workshop, we worked as a team to create initial survey questions, and asked <strong>how might we achieve our goals?</strong></p>
+
+{{< img class="portfolio-image" src="/images/rv-way/hmw.png" alt="sorted cards from brainstorming" >}}
+
+<p><strong>We had the absolute pleasure of interviewing a wide range of people throughout this entire process. </strong>They shared stories of life on the road (both full-time and part-time), what it’s like to raise a family in 400sqft (or less), maneuverability successes, scariest moments, hilarious anecdotes, and so much more.</p>
+
+<figure class="portfolio-image">
+    {{< img src="/images/rv-way/don-interview.png" alt="user interview with D & M" >}}
+    <figcaption>Chatting with D & M was a blast. My face hurt from laughing so much!</figcaption>
+</figure>
+<p>While a wealth of invaluable information was shared with us during our interviews, one of my favorite anecdotes was the term Stick-and-Bricker: referring to someone who lives in a stationary home.</p>
+<p>The whole RV experience is extremely personal, and the majority of RVers rely on each other for important tips and safety information via message boards and Facebook groups.</p>
+<p><strong>During our initial interviews, we learned that many of our users preferred products that had a personal touch. They didn’t want to feel like they were interacting with a robot, but with a fellow RVer</strong> (or at least a humanoid robot!). Taking the community mindset into account, we designed an onboarding experience to feel conversational and personalized.</p>
+
+</div>
+{{</rawhtml>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <div>
+        <img class="pulsing inline-block" style="margin: 0 .5rem 1rem;" src="/images/rv-way/road-blocks-icon.png" /><h3 class="inline-block">Road Blocks</h3>
+    </div>
+    <p>In the existing app, users input their vehicle’s specifications, then a route was generated that’s safe for RVs. But <strong>early testing showed that the user interface was not intuitive. </strong>It wasn’t clear what the user is supposed to do first when they arrived on the map page.<br><strong>Navigating the app was confusing and overall, the existing solution was just not usable.</strong></p>
+    
+    {{< img class="portfolio-image" src="/images/rv-way/original-designs.png" alt="The original RV Way" >}}
+
+<p>The original design didn’t meet accessibility standards and the home page was not informative.<strong>An overwhelming majority of people we interviewed weren’t sure what the purpose of RV Nav was, or how it was different from other navigational products.</strong></p>
+
+</div>
+{{</rawhtml>}}
+
+{{<callout>}}
+<h6 class="text-center">“Right of the bat, the front page tells me nothing. There aren’t pictures to suggest anything and the big block of text is too hard to read.”</h6>
+{{</callout>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <p>We began with the name: our <strong>testing showed that the name RV Nav wasn’t descriptive enough.</strong> Nav (an abbreviation on navigation) is a recent adaptation. A large percentage of our demographic is older, so we wanted to choose a name that was clear to a broader range of people.</p>
+    <p>We experimented with many names related to RVs and life on the road, and after conducting preference and association research, we landed on RV Way. It tested well with a wide age range and represents the message we heard over and over again: <strong>RVing isn’t just a hobby, it’s a way of life.</strong></p>
+    
+<figure class="portfolio-image">
+    {{< img src="/images/rv-way/name-voting.png" alt="Voting on the new name" >}}
+    <figcaption>As you can see, we had several Dad Joke lovers on our team (myself included)</figcaption>
+</figure>
+    <p>Knowing we needed to overhaul the current UI and only had 8 weeks to do so, we borrowed a few techniques from Jake Knapp’s Design Sprint. Taking to our respective whiteboards, we sketched out as many layouts ideas as possible in 15 minutes or less.</p>
+    {{< img class="portfolio-image" src="/images/rv-way/sketching.jpeg" alt="Sketches on a whiteboard" >}}
+</div>
+{{</rawhtml>}}
+
+{{<callout>}}
+<h6 class="text-center">“How do I get safely from point A to point B with my RV?”</h6>
+{{</callout>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <strong>Understanding the steps our users will take to reach their destination is just as important in UX as it is when planning a road trip. </strong>
+    <p>Just like many road trips, our user flow took a rather circuitous route to reach its final form. And as RVers know perhaps better than anyone, <strong>once we understood our route, it was all about the journey from then on.</strong></p>
+    
+    {{< img class="portfolio-image" src="/images/rv-way/user-flow.png" alt="User flow" >}}
+</div>
+{{</rawhtml>}}
+
+{{<rawhtml>}}
+<div class="container mx-auto mb-32">
+    <div>
+        <img class="pulsing inline-block" style="margin: 0 .5rem 1rem;" src="/images/rv-way/alternative-route-icon.png" /><h3 class="inline-block">Alternative Routes</h3>
+    </div>
+    <p><strong>Working on this project drove home the mindset of “you are not your users,” </strong>because design, like road trips, doesn’t always go according to plan. Sometimes you have to choose an alternative route, and finding the best option is often an iterative process.</p>
+    <p>Initially, we relied on assumptions loosely backed by research for all of our design decision. By conducting usability tests and getting feedback from peers <strong>we were able to make iterations based not only on what we thought would work but what our users actually needed.</strong></p>
+    
+{{< img class="portfolio-image" src="/images/rv-way/ours-test.png" alt="Usability testing" >}}
+
+<p><strong>We found that our initial design for the home page was too vague and created a false bottom </strong>I think of this as “the curse of the Dribbble shot mindset”). Users didn’t know to scroll down for more information. <strong>We updated the background illustrations to be more visually interesting without causing a distraction and updated the copy to be descriptive.</strong></p>
+
+{{< img class="portfolio-image" src="/images/rv-way/landing-iterations.png" alt="Iterations of landing page" >}}
+    
+<p>We received feedback that the sign-up background was too chaotic, so we adjusted the colors to make the sign-up form pop.</p>
+
+{{< img class="portfolio-image" src="/images/rv-way/sign-up-iterations.png" alt="Iterations of the sign-up page" >}}
+
+<p>Feedback about the sign-up page was unanimous: while the mountain illustration was cool, it didn’t convey the same feeling as the two-dimensional mountains used everywhere else in the design. Taking this feedback into account, we changed the sign-in page to be visually similar to the rest of the app. To help distinguish it from the sign-up page, we went with a nighttime color scheme.</p>
+
+{{< img class="portfolio-image" src="/images/rv-way/sign-in-iterations.png" alt="Iterations of the sign-in page" >}}
+
+</div>
+{{</rawhtml>}}
+
+{{< section title="Design System" icon="/images/rv-way/design-system-icon.png" >}}
+We took an afternoon to gather inspiration, dive into colors, and explore typefaces.
+       We asked ourselves, **“What feeling are we trying to convey? What colors help convey those feelings?”**
+
+{{< img class="portfolio-image" src="/images/rv-way/color-inspiration.png" alt="Color inspiration" >}}
+
+###### Color Palette
+Avoiding the urge to use every color under the sun, we kept things simple by choosing one primary color and one accent. **They represent freedom, adventure, friendliness, reliability, safety, and joy.**
+Using opacity helped keep our color palette minimal while still providing visual variation.
+
+<div class="grid grid-cols-4 md:grid-cols-4 gap-4 py-6">
+<div class="grid col-span-2 md:col-span-1">
+    {{< colorswatch label="Product Blue" colorlabel="#00b2d9" color="#00b2d9" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="75% opacity" colorlabel="#00b2d9" color="rgba(0, 178, 217, .75)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="50% opacity" colorlabel="#00b2d9" color="rgba(0, 178, 217, .5)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="25% opacity" colorlabel="#00b2d9" color="rgba(0, 178, 217, .25)" >}}
+</div>
+
+<div class="grid col-span-2 md:col-span-1">
+    {{< colorswatch label="Accent Orange" colorlabel="#FAA05D" color="#FAA05D" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="75% opacity" colorlabel="#FAA05D" color="rgba(250, 160, 93, .75)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="50% opacity" colorlabel="#FAA05D" color="rgba(250, 160, 93, .5)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="25% opacity" colorlabel="#FAA05D" color="rgba(250, 160, 93, .25)" >}}
+</div>
+
+<div class="grid col-span-2 md:col-span-1">
+    {{< colorswatch label="Primary Gray" colorlabel="#2A2E43" color="#2A2E43" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="75% Opacity" colorlabel="#2A2E43" color="rgba(42, 46, 67, .75)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="50% Opacity" colorlabel="#2A2E43" color="rgba(42, 46, 67, .5)" >}}
+</div>
+<div class="col-span-2 md:col-span-1">
+    {{< colorswatch label="25% Opacity" colorlabel="#2A2E43" color="rgba(42, 46, 67, .25)" >}}
+</div>
+</div>
+<div class="my-16">
+<h6>Typeface</h6>
+ <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-6">
+    <div class="grid col-span-1 md:col-span-1">
+        <p>We wanted a font that was easy to read, felt safe, and had a hint of adventure. We tried Helvetica, Roboto, Lato, and Heebo.<br>
+        We went to our peers for input on fonts, and everyone agreed that Heebo was the best of the bunch. <strong>It’s legible, has some personality, but still conveys safety.</strong></p>
+    </div>
+    <div class="grid col-span-1 md:col-span-1">
+        {{< img src="/images/rv-way/typeface.png" alt="Color inspiration" >}}
+    </div>
+</div>
+
+<div class="my-16">
+<h6>Branding</h6>
+<p>There’s a fair amount of whimsy and a whole lot of adventure in the RV world. <strong>We decided that illustrations were the best way to carry that whimsy off of the streets and into our designs.</strong></p>
+<p>I put on my illustrator hat and got to work doodling RVs and mountains. And thus our tiny orange RV was born! I’d be lying if I said there was no squealing once it was finished. It’s just so cute!</p>
+
+{{< img class="portfolio-image" src="/images/rv-way/hero-background.png" alt="Color inspiration" >}}
+</div>
+
+{{< /section >}}
+
+<!--
+{{< section title="Final Destination" icon="/images/rv-way/destination-icon.png" >}}
+## VIDEO GOES HERE YOU GOON; YEAH MAKE IT A SHORTCODE DUH!
+{{< /section >}}
+-->
+
+{{< section title="Looking in the Rearview Mirror" icon="/images/rv-way/rearview-mirror-icon.png" >}}
+
+###### “The drive is not always about the destination. The sights in between are just as interesting. There’s lots of help finding where to go, but not the best way to get there in an RV”  
+
+This quote from one of our interviewees really stuck with me. Traveling in an RV, like life, (and UX!) is not necessarily about the destination. **The journey is just as valuable, and the fastest route is not always the best option.** There’s something to be said for choosing the road less traveled. You never know what adventures you’ll find along the way!
+
+###### Waiting too long for feedback is wasteful
+**It’s of utmost importance to get feedback early and often.** Not just from users, but from developers and other team members. We could have saved so many headaches had we taken more time to learn about our dev team’s capabilities.
+
+###### You are not your users
+Just because something makes sense to you and your peers, doesn’t mean it will make sense to your users! 
+   If we rely on our assumptions without validation from users, we might end up with a product that users are not going to love or worse, not use at all. **Users will always have a different perspective on what is and what is not useful.**
+
+###### “Sometimes you have to yeet your babies.”
+A mentor once gave me this invaluable advice: **like most things in life, the first solution is not always the best solution.** Iteration is key, and there’s always room for improvement. This project provided ample opportunities for me to “yeet my babies.” **I learned not to get too attached to any of my designs, to be flexible, and open to feedback in all forms.**
+
+{{< /section >}}

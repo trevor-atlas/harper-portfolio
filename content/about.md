@@ -33,15 +33,15 @@ In my spare time, you will find me hiking with friends, taking pictures of and d
 {{<rawhtml>}}
      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 py-10">
      <figure>
-        <img class="rounded" src="/images/indy.jpeg" alt="Harper with a cute dog" />
+        {{< img class="rounded" src="/images/indy.jpeg" alt="Harper with a cute dog" >}}
         <figcaption>When you run into your BFF on the street<figcaption>
      </figure>
      <figure>
-        <img class="rounded" src="/images/stilt-salad.jpeg" alt="Young Harper on stilts" />
+        {{< img class="rounded" src="/images/stilt-salad.jpeg" alt="Young Harper on stilts" >}}
         <figcaption>Age 10, dressed as a salad on stilts<figcaption>
      </figure>
      <figure>
-        <img class="rounded" src="/images/aerial.jpeg" alt="Harper on an aerial hoop" />
+        {{< img class="rounded" src="/images/aerial.jpeg" alt="Harper on an aerial hoop" >}}
         <figcaption>Throwback to my circus days<figcaption>
      </figure>
     </div>
