@@ -1,10 +1,14 @@
 baseURL = "https://harperatlas.com/"
 languageCode = "en-us"
 title = "Harper Atlas"
+staticDir = "static"
 [module]
     [[module.mounts]]
         source = "assets/images"
         target = "static/images"
+    [[module.mounts]]
+        source = "static"
+        target = "static"
 
 [markup.goldmark.renderer]
 unsafe = true
