@@ -1,3 +1,5 @@
+all: clean build
+
 clean:
 	@rm -rf ./public ./resources
 
@@ -6,3 +8,4 @@ run:
 
 build:
 	hugo --gc --minify
+
