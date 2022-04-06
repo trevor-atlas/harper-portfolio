@@ -1,0 +1,51 @@
+
+@import 'colors';
+@import 'tailwind';
+@import 'animations';
+@import 'typography';
+@import 'intro';
+@import 'footer';
+@import 'ui';
+@import 'case-study';
+
+body {
+	padding-top: 3.5rem;
+	background-color: $primary-offwhite;
+}
+
+.primary-background {
+	min-height: 550px;
+	background-color: $primary-blue;
+	position: relative;
+	overflow: hidden;
+	.bg {
+		will-change: transform;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: .5;
+		background-image: url("/images/feather-mandala-transparent-.png");
+		background-position: 25% center;
+		background-repeat: no-repeat;
+		background-size: 550px auto;
+		z-index: 0;
+
+		@media (max-width: 500px) {
+			background-size: 350px auto;
+			background-position: center 25%;
+		}
+	}
+}
+
+.container {
+	z-index: 1;
+
+	@media(min-width: 1280px) {
+		max-width: 1024px;
+	}
+}
+
+
+

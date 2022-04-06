@@ -1,0 +1,79 @@
+body, html {
+  color: $primary-text;
+  font-family: 'Lato', sans-serif;
+  background-color: $primary-offwhite;
+  font-size: 18px;
+
+  @media(max-width: 480px) {
+    font-size: 16px;
+  }
+}
+
+p, a {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+ol,
+ul {
+  list-style: initial;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+
+p + ol, p + ul {
+  margin-top: -1.25rem;
+}
+
+p + h3, p + h2 {
+  margin-top: 4rem;
+}
+
+.text-lato {
+  font-family: 'Lato', sans-serif;
+}
+.text-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+}
+
+
+h1 {
+  font-size: 3.3rem;
+}
+
+h2 {
+  font-size: 2.67rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.35rem;
+}
+
+h6 {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.35rem;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
