@@ -1,0 +1,39 @@
+@import '../../styles/colors';
+
+.card {
+	border-radius: 3px;
+	margin-bottom: 3rem;
+	padding-top: 2rem;
+	background-color: $primary-offwhite;
+	position: relative;
+	box-shadow: 0 16px 60px rgba(0, 0, 0, 0.10);
+	transition: box-shadow 0.5s cubic-bezier(.25, .8, .25, 1);
+
+	&:hover {
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08), 0 10px 10px rgba(0, 0, 0, 0.05);
+	}
+
+	.info {
+		padding: 4rem;
+	}
+
+	.info-text {
+		font-size: 1rem;
+		color: #8191A6;
+		font-family: 'Lato', sans-serif;
+		line-height: 1.2;
+	}
+
+	.image {
+		position: relative;
+		> div {
+			display: block!important;
+		}
+
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+
