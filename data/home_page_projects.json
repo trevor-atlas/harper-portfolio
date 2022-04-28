@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Centralizing Species Data",
+    "description": "Working with Project Canopy",
+    "thumbnail": "/images/project-canopy-thumb.png",
+    "image": "/images/project-canopy-card.png",
+    "link": "/portfolio/project-canopy"
+  },
+  {
+    "title": "Home is all around you",
+    "description": "Redesigning RV Way",
+    "thumbnail": "/images/rv-way-thumb.png",
+    "image": "/images/rv-way-card.png",
+    "link": "/portfolio/rv-way"
+  }
+]

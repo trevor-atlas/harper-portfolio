@@ -5,6 +5,12 @@ import { Callout } from "../../src/components/callout/Callout";
 import { Section } from "../../src/components/section/Section";
 import { ColorSwatch } from "../../src/components/color-swatch/ColorSwatch";
 
+const components = {
+	Callout,
+	Section,
+	ColorSwatch,
+};
+
 const Portfolio = ({
 	postData: { id, title, date, contentHtml, content, featuredImage, excerpt },
 }: {
@@ -21,10 +27,7 @@ const Portfolio = ({
 	return (
 		<main>
 			<article className="case-study">
-				<MDXRemote
-					{...content}
-					components={{ Callout, Section, ColorSwatch }}
-				/>
+				<MDXRemote {...content} components={components} />
 			</article>
 		</main>
 	);
