@@ -9,11 +9,11 @@ export function Footer() {
 		<footer className="footer text-center sm:text-left">
 			<div className="flex hidden sm:block items-start container mx-auto">
 				<h4>Say hello!</h4>
-				<Image
+				{/* eslint-disable-next-line @next/next/no-img-element */}
+				<img
 					className="footer-arrow"
 					src="/images/arrow 2.png"
 					alt="squiggle arrow"
-					width={760}
 				/>
 			</div>
 			<div className="flex flex-wrap container mx-auto sm:justify-between">
