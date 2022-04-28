@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import footerLinks from "../../data/footer_links.json";
 
 const links = footerLinks.filter((entry) => entry && entry.name && entry.url);
@@ -8,10 +9,11 @@ export function Footer() {
 		<footer className="footer text-center sm:text-left">
 			<div className="flex hidden sm:block items-start container mx-auto">
 				<h4>Say hello!</h4>
-				<img
+				<Image
 					className="footer-arrow"
 					src="/images/arrow 2.png"
 					alt="squiggle arrow"
+					width={760}
 				/>
 			</div>
 			<div className="flex flex-wrap container mx-auto sm:justify-between">
@@ -25,14 +27,15 @@ export function Footer() {
 						<a
 							key={index}
 							target="_blank"
-							rel="noopener"
+							rel="noopener noreferrer"
 							className="text-center m-0 inline-block pr-4"
 							href={link.url}
 						>
+							{/* eslint-disable-next-line @next/next/no-img-element */}
 							<img
 								className="icon inline-block"
 								src={`/images/svg/${link.name}.svg`}
-								alt=""
+								alt={link.name}
 							/>
 						</a>
 					))}
