@@ -15,13 +15,11 @@ export const Nav = () => {
 		<nav className={styles["primary-nav"]}>
 			<div className="container mx-auto">
 				<ul>
-					{isHomepage && (
-						<li className="float-left">
-							<Link href="/">
-								<a>Harper Atlas</a>
-							</Link>
-						</li>
-					)}
+					<li className="float-left">
+						<Link href="/">
+							<a>Harper Atlas</a>
+						</Link>
+					</li>
 					<li className="text-right">
 						<Link href="/about">
 							<a>About</a>
