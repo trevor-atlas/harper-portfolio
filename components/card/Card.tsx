@@ -10,7 +10,7 @@ export const Card = ({ title, description, link, image }) => {
 				<div className="flex flex-wrap">
 					<div className={`${styles.info} w-full md:w-2/4`}>
 						<h2>{title}</h2>
-						<div className={`${styles["info-text"]} mb-6`}>{description}</div>
+						<div className={`${styles.info_text} mb-6`}>{description}</div>
 						<a href={link} className="button inline-block">
 							Learn more
 						</a>
