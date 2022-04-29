@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { MDXRemote } from "next-mdx-remote";
 import { getAllPostIds, getPostData } from "../../lib/posts";
-import { Callout } from "../../src/components/callout/Callout";
-import { Section } from "../../src/components/section/Section";
-import { ColorSwatch } from "../../src/components/color-swatch/ColorSwatch";
+import { Callout } from "../../components/callout/Callout";
+import { Section } from "../../components/section/Section";
+import { ColorSwatch } from "../../components/color-swatch/ColorSwatch";
 
 const components = {
 	Callout,

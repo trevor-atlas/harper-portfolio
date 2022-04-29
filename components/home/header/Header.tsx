@@ -1,6 +1,6 @@
 import { animated, useSpring } from "react-spring";
 import { useScrollPosition } from "../../../hooks/useScroll";
-import homePageHeaderData from "../../../../data/intro.json";
+import homePageHeaderData from "../../../data/intro.json";
 
 const trans = (x, y) => `perspective(300px) translate3D(0, ${y * 1.1}px, 0)`;
 

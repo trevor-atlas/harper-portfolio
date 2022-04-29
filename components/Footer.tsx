@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import footerLinks from "../../data/footer_links.json";
+import footerLinks from "../data/footer_links.json";
 
 const links = footerLinks.filter((entry) => entry && entry.name && entry.url);
 
@@ -18,7 +18,7 @@ export function Footer() {
 			</div>
 			<div className="flex flex-wrap container mx-auto sm:justify-between">
 				<div className="w-full sm:w-auto">
-					<a className="text-playfair" href="">
+					<a className="text-playfair">
 						&copy;{new Date().getFullYear()} Harper Atlas
 					</a>
 				</div>

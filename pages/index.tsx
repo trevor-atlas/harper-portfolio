@@ -1,5 +1,5 @@
-import { Header } from "../src/components/home/header/Header";
-import { Card } from "../src/components/card/Card";
+import { Header } from "../components/home/header/Header";
+import { Card } from "../components/card/Card";
 import projectsData from "../data/home_page_projects.json";
 
 const projects = projectsData.filter(

@@ -197,7 +197,7 @@
 	will-change: transform;
 	&:hover {
 		animation-name: zoomitbig;
-		animation-duration: .5s;
+		animation-duration: 0.5s;
 		animation-timing-function: ease-in-out;
 		animation-iteration-count: 1;
 		animation-fill-mode: forwards;
@@ -225,13 +225,18 @@
 }
 
 @keyframes pulse {
-	0% { transform: scale(.8); }
+	0% {
+		transform: scale(0.8);
+	}
 
-	50% { transform: scale(1.1); }
+	50% {
+		transform: scale(1.1);
+	}
 
-	100% { transform: scale(.8); }
+	100% {
+		transform: scale(0.8);
+	}
 }
-
 
 .pulsing {
 	transform-origin: center center;
@@ -258,7 +263,7 @@
 	transform-origin: center center;
 	will-change: transform, opacity;
 	animation-name: fade-in-down;
-	animation-duration: .5s;
+	animation-duration: 0.5s;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: both;
 	animation-play-state: running;
@@ -287,31 +292,31 @@
 }
 
 .icon {
-  &:hover {
-    animation-name: zoomitbig;
-    animation-duration: .5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-play-state: running;
-  }
+	&:hover {
+		animation-name: zoomitbig;
+		animation-duration: 0.5s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+		animation-play-state: running;
+	}
 }
 
 @keyframes zoomitbig {
-  15% {
-    transform-origin: center center;
-    transform:scale(1.4, 1.2);
-  }
-  40% {
-    transform-origin: center center;
-    transform:scale(0.9, 0.9);
-  }
-  75% {
-    transform-origin: center center;
-    transform:scale(1.08, 1);
-  }
-  100% {
-    transform-origin: center center;
-    transform:scale(1, 1);
-  }
+	15% {
+		transform-origin: center center;
+		transform: scale(1.4, 1.2);
+	}
+	40% {
+		transform-origin: center center;
+		transform: scale(0.9, 0.9);
+	}
+	75% {
+		transform-origin: center center;
+		transform: scale(1.08, 1);
+	}
+	100% {
+		transform-origin: center center;
+		transform: scale(1, 1);
+	}
 }

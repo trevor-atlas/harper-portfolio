@@ -1,5 +1,5 @@
 import React from "react";
-import { HoverTilt } from "../src/components/hover-tilt/HoverTilt";
+import { HoverTilt } from "../components/hover-tilt/HoverTilt";
 import styles from "./about.module.scss";
 import Image from "next/image";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import { Nav } from "../src/components/nav/Nav";
-import { Footer } from "../src/components/Footer";
-import "../src/styles/main.scss";
+import { Nav } from "../components/nav/Nav";
+import { Footer } from "../components/Footer";
+import "../styles/main.scss";
 import Head from "next/head";
 import data from "../data/intro.json";
 

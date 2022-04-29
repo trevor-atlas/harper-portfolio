@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, { FC } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const duration = 0.3;
 const variants = {
 	initial: {
 		y: -100,
-		opacity: 0
+		opacity: 0,
 	},
 	enter: {
 		y: 0,
@@ -13,14 +13,14 @@ const variants = {
 		transition: {
 			duration: duration,
 			delay: duration,
-			when: 'beforeChildren'
-		}
+			when: "beforeChildren",
+		},
 	},
 	exit: {
 		y: 100,
 		opacity: 0,
-		transition: { duration: duration }
-	}
+		transition: { duration: duration },
+	},
 };
 
 export const Layout = ({ children }) => (
